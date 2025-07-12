@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    nav.navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: static;
+        width: auto;
+    }
+
+    nav.navigation a {
+        border: none;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

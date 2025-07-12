@@ -1,0 +1,108 @@
+/* Base reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f8;
+}
+
+/* Header */
+header {
+    background-color: skyblue;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: skyblue;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+}
+
+nav.navigation a {
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+    text-decoration: none;
+    border-top: 1px solid #666;
+}
+
+nav.navigation a:hover {
+    background-color: #333;
+}
+
+/* Main */
+main {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
