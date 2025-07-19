@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Explore Kenya, land where wildlife roam freely. Discover its weather, wildlife, national parks, and rich culture." />
+    <meta name="author" content="Kevin Biketi" />
+    <meta name="keywords" content="Kenya, Visit Maasai Mara, Mombasa, National Parks" />
+    <title>Country page - wdd131 Kevin Biketi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/x-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place_small.css" />
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kenya</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/kenya_lion_small.jpg" media="(min-width: 750px)">
+
+                <img src="images/kenya_lion_small.jpg" alt="Kenya scene" loading="lazy">
+
+            </picture>
+        </section>
+
+        <!-- Data Section -->
+        <section class="overlay-box data">
+            <h3>Data</h3>
+            <p><strong>Area:</strong> 582,646 sq km</p>
+            <p><strong>Population:</strong> 53,477,000</p>
+            <p><strong>Capital:</strong> Nairobi</p>
+            <p><strong>Languages:</strong> English, Swahili</p>
+            <p><strong>Currency:</strong> Kenyan Shilling (KES)</p>
+            <p><strong>Time Zone:</strong> UTC+3 (East Africa Time)</p>
+            <p><strong>Calling Code:</strong> +254</p>
+            <p><strong>Internet TLD:</strong> .ke</p>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="overlay-box weather">
+            <h3 class="weather-heading">
+                Weather<span class="emoji"> ⛅</span>
+                <img src="images/cloudy_sky_icon.svg" alt="cloudy weather icon" class="weather-icon" />
+            </h3>
+            <p>Temperature: <span id="temp">24</span>°C</p>
+            <p>Conditions: Cloudy</p>
+            <p>Wind: <span id="speed">11</span> km/h</p>
+            <p>Wind Chill: <span id="windchill">N/A</span></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🌴 Kevin Biketi | Kenya<br>
+            Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

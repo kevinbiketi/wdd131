@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+    .weather-heading {
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: transparent;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .weather-heading .emoji {
+        display: none;
+    }
+
+    .weather-heading .weather-icon {
+        display: inline-block;
+        position: center;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70px;
+        height: auto;
+    }
+}
+
+Explain
