@@ -1,0 +1,171 @@
+:root {
+    --text-font: "Fira Sans", sans-serif;
+    --header-font: "Josefin Slab", serif;
+    --main-color: #284b63;
+    --accent-color-1: #d9d9d9;
+    --accent-color-2: #3c6e71;
+    --accent-color-3: #c32f27;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--text-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--main-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: var(--text-font);
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+
+
+}
+
+#menu {
+    display: block;
+    background-color: var(--main-color);
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem 0.75rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+
+nav {
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+
+
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+
+}
+
+.navigation li {
+    display: none;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+
+
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: var(--accent-color-3);
+    background-color: var(--accent-color-1);
+    text-decoration: underline double;
+    border: 1px solid white;
+
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+main {
+    padding-bottom: 20px;
+}
+
+h2 {
+
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 2.7rem;
+    padding: 20px;
+
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+}
+
+
+.res-grid section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--accent-color-1);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 315px;
+
+}
+
+.res-grid h3 {
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: x-large;
+    padding-bottom: 3px;
+}
+
+.res-grid span {
+    font-weight: bold;
+
+}
+
+.res-grid p {
+    font-family: var(--text-font);
+    padding-left: 20px;
+}
+
+
+img {
+    width: 300px;
+    height: auto;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+}
+
+Explain
